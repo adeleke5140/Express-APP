@@ -1,13 +1,4 @@
-const friends = [
-  {
-    id: 0,
-    name: "Sir Isaac Newton"
-  },
-  {
-    id: 1,
-    name: "Albert Einstein"
-  }
-]
+const friends = require("../models/friends.model")
 
 const getFriends = (req, res) => {
   res.status(200).json(friends)
